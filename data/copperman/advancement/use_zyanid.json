@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "drink_zyanid": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:potion"],
+          "components": {
+            "minecraft:potion_contents": {
+              "potion": "minecraft:strong_poison"
+            },
+            "minecraft:custom_name": { "text": "Zyanid" }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "copperman:gadgets/zyanid/zyanid_die"
+  }
+}
