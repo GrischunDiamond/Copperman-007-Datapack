@@ -1,0 +1,1 @@
+execute at @s unless block ~-1 ~ ~ observer unless block ~-1 ~ ~-1 observer unless block ~-1 ~ ~1 observer unless block ~ ~ ~-1 observer unless block ~ ~ ~ observer unless block ~ ~ ~1 observer unless block ~1 ~ ~-1 observer unless block ~1 ~ ~ observer unless block ~1 ~ ~1 observer run kill @s
