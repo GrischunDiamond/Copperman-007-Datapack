@@ -1,0 +1,1 @@
+say Here ist the Help Message displayed with all Trigger Commands!
