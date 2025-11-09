@@ -16,3 +16,11 @@ scoreboard objectives add camera_admin_only trigger
 scoreboard objectives add camera_delete_admin_only trigger
 
 
+#Setup get new unused Camera_id
+execute unless entity @e[type=marker,name=new_camera_id] run summon marker ~ ~ ~ {CustomName:"new_camera_id"}
+execute if entity @e[type=marker,name=new_camera_id,scores={camera_id=..1}] run scoreboard players set @e[type=marker, name=new_camera_id] camera_id 0
+
+
+
+
+

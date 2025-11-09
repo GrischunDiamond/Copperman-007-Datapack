@@ -8,6 +8,10 @@ execute as @e[type=block_display, tag=surveillance_camera] at @s if entity @n[ty
  #Place new Camera
 execute as @e[type=armor_stand, name=Camera] at @s run function copperman:gadgets/camera/place_camera
 
+execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraId] run function copperman:gadgets/camera/set_camera_id
+
+
+#You can rename the camera multiple times
 execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/set_camera_name
 
 #Remove Camera

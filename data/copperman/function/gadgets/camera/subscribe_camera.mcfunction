@@ -1,0 +1,1 @@
+# Multiple If executes if the camera has an specific ID number = > set the specific Camera tag to the player camera_1
