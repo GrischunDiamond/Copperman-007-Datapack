@@ -14,6 +14,7 @@ scoreboard objectives add camera_on trigger
 scoreboard objectives add camera_off trigger
 scoreboard objectives add camera_admin_only trigger
 scoreboard objectives add camera_delete_admin_only trigger
+scoreboard objectives add list_cameras trigger
 
 
 #Setup get new unused Camera_id

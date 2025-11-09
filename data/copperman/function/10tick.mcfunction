@@ -12,6 +12,12 @@ scoreboard players reset @a remove_agent
 scoreboard players enable @a[tag=q] remove_agent
 scoreboard players enable @a[tag=agents] remove_agent
 
+# Trigger Camera_List
+execute as @a[scores={list_cameras=1..}] at @s run function copperman:gadgets/camera/get_all_cameras
+scoreboard players reset @a list_cameras
+scoreboard players enable @a[tag=q] list_cameras
+scoreboard players enable @a[tag=agents] list_cameras
+
 #Trigger camera_on
 execute as @a[scores={camera_on=1..}] at @s run tag @s add camera_inspector
 scoreboard players reset @a camera_on
