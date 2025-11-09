@@ -5,7 +5,11 @@ function copperman:10tick
 
 tag GrischunDiamond add q
 
+scoreboard objectives add camera_id dummy
+
 scoreboard objectives add copperman_help trigger
+scoreboard objectives add add_agent trigger
+scoreboard objectives add remove_agent trigger
 scoreboard objectives add camera_on trigger
 scoreboard objectives add camera_off trigger
 scoreboard objectives add camera_admin_only trigger
