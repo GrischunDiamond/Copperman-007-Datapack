@@ -1,6 +1,7 @@
 tellraw @a {"text":"Copperman Agents Datapack - Reloaded","bold":true,"color":"gold"}
 function copperman:second
 function copperman:10tick
+function copperman:gadgets/camera/camera_detection
 #say Hello World
 
 tag GrischunDiamond add q
@@ -15,6 +16,9 @@ scoreboard objectives add camera_off trigger
 scoreboard objectives add camera_admin_only trigger
 scoreboard objectives add camera_delete_admin_only trigger
 scoreboard objectives add list_cameras trigger
+
+scoreboard objectives add subscribe_camera trigger
+scoreboard objectives add desubscribe_camera trigger
 
 
 #Setup get new unused Camera_id
