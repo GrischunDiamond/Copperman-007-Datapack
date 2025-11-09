@@ -31,7 +31,7 @@ scoreboard players enable @a[tag=q] camera_off
 scoreboard players enable @a[tag=agents] camera_off
 
 
-#Config Subscribe Camera (not to use from players via Command)
+#Subscribtion
 # Trigger Camera Subscribe
 execute as @a[scores={subscribe_camera=1..}] at @s run function copperman:gadgets/camera/subscribe_camera
 scoreboard players reset @a subscribe_camera
@@ -43,6 +43,18 @@ execute as @a[scores={desubscribe_camera=1..}] at @s run function copperman:gadg
 scoreboard players reset @a desubscribe_camera
 scoreboard players enable @a[tag=q] desubscribe_camera
 scoreboard players enable @a[tag=agents] desubscribe_camera
+
+# Trigger all Camera Subscribe
+execute as @a[scores={subscribe_all_cameras=1..}] at @s run function copperman:gadgets/camera/subscribe_all_cameras
+scoreboard players reset @a subscribe_all_cameras
+scoreboard players enable @a[tag=q] subscribe_all_cameras
+scoreboard players enable @a[tag=agents] subscribe_all_cameras
+
+#Trigger all Camera Desubscribe
+execute as @a[scores={desubscribe_all_cameras=1..}] at @s run function copperman:gadgets/camera/desubscribe_all_cameras
+scoreboard players reset @a desubscribe_all_cameras
+scoreboard players enable @a[tag=q] desubscribe_all_cameras
+scoreboard players enable @a[tag=agents] desubscribe_all_cameras
 
 
 #Trigger Camera_admin_only
