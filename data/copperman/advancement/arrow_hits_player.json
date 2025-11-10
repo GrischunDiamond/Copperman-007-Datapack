@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "arrow_hits_player": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:arrow"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "copperman:gadgets/guards/arrow_hits_player"
+  }
+}

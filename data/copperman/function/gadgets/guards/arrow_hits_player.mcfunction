@@ -1,0 +1,4 @@
+execute as @s if entity @e[name=Guard, distance=..15] if entity @s[tag=!q, tag=!agents] run tellraw @a[tag=q] ["",{text:"The Person: ",bold:true,color:"gold"},{selector:"@a[sort=nearest, limit=1, distance=..5]",bold:true,color:"dark_red"},{text:" was detected from an Guard near the the Camera Location: ",bold:true,color:"gold"},{nbt:"CustomName",entity:"@e[type=block_display, distance=..50, sort=nearest, limit=1]",bold:true,color:"dark_red"}]
+execute as @s if entity @e[name=Guard, distance=..15] if entity @s[tag=!q, tag=!agents] run tellraw @a[tag=agents] ["",{text:"The Person: ",bold:true,color:"gold"},{selector:"@a[sort=nearest, limit=1, distance=..5]",bold:true,color:"dark_red"},{text:" was detected from an Guard near the the Camera Location: ",bold:true,color:"gold"},{nbt:"CustomName",entity:"@e[type=block_display, distance=..50, sort=nearest, limit=1]",bold:true,color:"dark_red"}]
+
+advancement revoke @s only copperman:arrow_hits_player
