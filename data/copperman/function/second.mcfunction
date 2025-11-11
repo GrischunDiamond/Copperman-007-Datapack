@@ -5,7 +5,7 @@ execute as @a[advancements={copperman:use_zyanid=true}] run function copperman:g
 
 #Überwachungs Kamera
 #Place new Camera
-execute as @e[type=armor_stand, name=Camera] at @s run function copperman:gadgets/camera/place_camera
+execute as @e[predicate=copperman:is_camera] at @s run function copperman:gadgets/camera/place_camera
 execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraId] run function copperman:gadgets/camera/set_camera_id
 
 #You can rename the camera multiple times

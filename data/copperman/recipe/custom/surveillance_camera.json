@@ -26,7 +26,8 @@
   "result": {
     "id": "minecraft:armor_stand",
     "components": {
-      "minecraft:custom_name": "Camera"
+      "minecraft:item_name": "Camera",
+      "minecraft:custom_data": "{copperman:camera}"
     }
   }
 }
