@@ -1,0 +1,9 @@
+execute if block ~-1 ~ ~ black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~-1 ~ ~-1 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~-1 ~ ~1 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~ ~ ~-1 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~ ~ ~ black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~ ~ ~1 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~1 ~ ~-1 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~1 ~ ~ black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
+execute if block ~1 ~ ~1 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
