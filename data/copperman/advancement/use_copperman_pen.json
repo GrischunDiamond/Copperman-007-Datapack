@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "use_copperman_pen": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:iron_hoe",
+          "predicates": {
+            "minecraft:custom_data": "{copperman:pen}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "copperman:gadgets/pen/use_copperman_pen"
+  }
+}
