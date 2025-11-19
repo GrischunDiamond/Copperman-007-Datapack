@@ -11,6 +11,7 @@ recipe give @a copperman:custom/surveillance_camera
 scoreboard objectives add camera_id dummy
 scoreboard objectives add opened_shulkerbox minecraft.custom:open_shulker_box
 scoreboard objectives add pen_clicks dummy
+scoreboard objectives add copperman_temp dummy
 
 scoreboard players set @a pen_clicks 0
 

@@ -8,16 +8,15 @@ execute as @a[advancements={copperman:use_zyanid=true}] run function copperman:g
 execute as @e[predicate=copperman:is_camera] at @s run function copperman:gadgets/camera/place_camera
 execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraId] run function copperman:gadgets/camera/set_camera_id
 
-#You can rename the camera multiple times
-execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/set_camera_name
+#You can rename the camera multiple times (only check cameras without hasCameraName tag)
+execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraName] run function copperman:gadgets/camera/set_camera_name
 
 #Remove Camera
 execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/remove_camera
 
 #PEN
-#Arm
-execute as @a[scores={pen_clicks=3}, tag=!pen_explode] run schedule function copperman:gadgets/pen/pen_explode 4s
-execute as @a[scores={pen_clicks=3}, tag=!pen_explode] run tag @s add pen_explode
+#Arm - Combined into one execute for efficiency
+execute as @a[scores={pen_clicks=3}, tag=!pen_explode] run function copperman:gadgets/pen/arm_pen
 
 #Disarm
-execute as @a[tag=pen_explode, limit=1] if score @s pen_clicks matches 0 run tag @s remove pen_explode
+execute as @a[tag=pen_explode] if score @s pen_clicks matches 0 run tag @s remove pen_explode
