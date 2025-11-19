@@ -1,0 +1,1 @@
+$tellraw @a[tag=camera_$(id)] ["",{text:"The Person: ",bold:true,color:"dark_aqua"},{selector:"@a[sort=nearest, limit=1, distance=..5]",bold:true,color:"aqua"},{text:" was detected at the Camera Location: ",bold:true,color:"dark_aqua"},{nbt:"CustomName",entity:"@s",bold:true,color:"aqua"}]

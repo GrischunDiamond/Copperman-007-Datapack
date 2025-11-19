@@ -8,8 +8,8 @@ execute as @a[advancements={copperman:use_zyanid=true}] run function copperman:g
 execute as @e[predicate=copperman:is_camera] at @s run function copperman:gadgets/camera/place_camera
 execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraId] run function copperman:gadgets/camera/set_camera_id
 
-#You can rename the camera multiple times
-execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/set_camera_name
+#You can rename the camera multiple times (only check cameras without hasCameraName tag)
+execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraName] run function copperman:gadgets/camera/set_camera_name
 
 #Remove Camera
 execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/remove_camera
