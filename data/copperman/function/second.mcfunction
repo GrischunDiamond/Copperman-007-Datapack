@@ -15,9 +15,8 @@ execute as @e[type=block_display, tag=surveillance_camera,tag=!hasCameraName] ru
 execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/remove_camera
 
 #PEN
-#Arm
-execute as @a[scores={pen_clicks=3}, tag=!pen_explode] run schedule function copperman:gadgets/pen/pen_explode 4s
-execute as @a[scores={pen_clicks=3}, tag=!pen_explode] run tag @s add pen_explode
+#Arm - Combined into one execute for efficiency
+execute as @a[scores={pen_clicks=3}, tag=!pen_explode] run function copperman:gadgets/pen/arm_pen
 
 #Disarm
-execute as @a[tag=pen_explode, limit=1] if score @s pen_clicks matches 0 run tag @s remove pen_explode
+execute as @a[tag=pen_explode] if score @s pen_clicks matches 0 run tag @s remove pen_explode
