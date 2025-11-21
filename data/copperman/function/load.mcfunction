@@ -5,8 +5,13 @@ function copperman:gadgets/camera/camera_detection
 #say Hello World
 
 tag GrischunDiamond add q
-recipe give @a copperman:custom/suitcase
-recipe give @a copperman:custom/surveillance_camera
+recipe give @a[tag=q] copperman:custom/suitcase
+recipe give @a[tag=q] copperman:custom/surveillance_camera
+recipe give @a[tag=q] copperman:custom/pen
+
+recipe give @a[tag=agents] copperman:custom/suitcase
+recipe give @a[tag=agents] copperman:custom/surveillance_camera
+recipe give @a[tag=agents] copperman:custom/pen
 
 scoreboard objectives add camera_id dummy
 scoreboard objectives add opened_shulkerbox minecraft.custom:open_shulker_box

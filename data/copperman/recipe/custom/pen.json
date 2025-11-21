@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ti",
+    "tit",
+    "bt "
+  ],
+  "key": {
+    "t": "minecraft:tnt",
+    "i": "minecraft:iron_ingot",
+    "b": "minecraft:ink_sac"
+  },
+  "result": {
+    "id": "minecraft:iron_hoe",
+    "components": {
+      "minecraft:item_model": "copperman:pen",
+      "minecraft:custom_name": {
+        "text": "Goldeneye Pen",
+        "color": "gold",
+        "bold": true
+      },
+      "minecraft:consumable": {
+              "consume_seconds": 100000,
+              "animation": "eat"
+    },
+      
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

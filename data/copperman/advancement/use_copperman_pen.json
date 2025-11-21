@@ -5,8 +5,8 @@
       "conditions": {
         "item": {
           "items": "minecraft:iron_hoe",
-          "predicates": {
-            "minecraft:custom_data": "{copperman:pen}"
+          "components": {
+            "minecraft:item_model": "copperman:pen"
           }
         }
       }

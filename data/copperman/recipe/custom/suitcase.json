@@ -27,7 +27,8 @@
         "text": "Suitcase",
         "color": "dark_gray",
         "bold": true
-      }
+      },
+      "item_model": "coppeman:item/suitcase"
     }
   }
 }
