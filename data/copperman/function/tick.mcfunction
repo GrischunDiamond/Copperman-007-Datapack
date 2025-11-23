@@ -4,6 +4,16 @@ scoreboard players reset @a opened_shulkerbox
 scoreboard players enable @a opened_shulkerbox
 
 #PEN
+#Arm - Transfer clicks from player to dropped pen
+execute at @a[scores={pen_clicks=1..}] as @e[type=item, distance=..5, sort=nearest, limit=1, predicate=copperman:is_pen] at @s run function copperman:gadgets/pen/transfer_to_item
+
+#Schedule explosion for items with 3 clicks
+execute as @e[type=item,  scores={pen_clicks=3}, tag=!pen_explode] run schedule function copperman:gadgets/pen/pen_explode 4s
+execute as @e[type=item, scores={pen_clicks=3}, tag=!pen_explode] run tag @s add pen_explode
+
+#Disarm
+execute as @a[tag=pen_explode, limit=1] if score @s pen_clicks matches 0 run tag @s remove pen_explode
+
 execute as @a[scores={pen_clicks=6}] run scoreboard players set @s pen_clicks 0
 
 #Detect when player picks up pen with value (only if player has inventory space)
