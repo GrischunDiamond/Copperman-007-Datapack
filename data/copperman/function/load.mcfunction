@@ -31,6 +31,7 @@ scoreboard objectives add subscribe_camera trigger
 scoreboard objectives add desubscribe_camera trigger
 scoreboard objectives add subscribe_all_cameras trigger
 scoreboard objectives add desubscribe_all_cameras trigger
+scoreboard objectives add list_agents trigger
 
 
 #Setup get new unused Camera_id

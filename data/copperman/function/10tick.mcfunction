@@ -56,6 +56,13 @@ scoreboard players reset @a desubscribe_all_cameras
 scoreboard players enable @a[tag=q] desubscribe_all_cameras
 scoreboard players enable @a[tag=agents] desubscribe_all_cameras
 
+#Trigger List a
+execute as @a[scores={list_agents=1..}] run tag @s add trigger_user
+execute as @a[scores={list_agents=1..}] run function copperman:list_agents
+scoreboard players reset @a list_agents
+scoreboard players enable @a[tag=q] list_agents
+
+
 
 #Trigger Camera_admin_only
 
