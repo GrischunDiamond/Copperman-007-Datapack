@@ -1,2 +1,2 @@
-say These are all available Cameras
+tell @a[scores={list_cameras=1..}] These are all available Cameras:
 execute as @e[type=block_display, tag=surveillance_camera] run tellraw @a[scores={list_cameras=1..}] ["",{nbt:"CustomName",entity:"@s",bold:true,color:"dark_aqua"},{text:" ID:",bold:true,color:"gold"},{text:" [",bold:true,color:"gold"},{score:{name:"@s",objective:"camera_id"},bold:true,color:"gold"},{text:"]",bold:true,color:"gold"}]
