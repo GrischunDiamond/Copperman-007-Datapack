@@ -9,4 +9,4 @@ execute as @e[type=armor_stand, limit=1, sort=nearest, y_rotation=-180..-135] at
 #say Summon Camera!
 summon block_display ~ ~ ~ {Tags:["surveillance_camera"],CustomName:"surveillance_camera"}
 
-kill @s
+kill @e[type=armor_stand, limit=1, sort=nearest, distance=..0.1]
