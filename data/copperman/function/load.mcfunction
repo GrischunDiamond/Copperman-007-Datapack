@@ -16,6 +16,7 @@ recipe give @a[tag=agents] copperman:custom/pen
 scoreboard objectives add camera_id dummy
 scoreboard objectives add opened_shulkerbox minecraft.custom:open_shulker_box
 scoreboard objectives add pen_clicks dummy
+scoreboard objectives add pen_timer dummy
 
 scoreboard players set @a pen_clicks 0
 

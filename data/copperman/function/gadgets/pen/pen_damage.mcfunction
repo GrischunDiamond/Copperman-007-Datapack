@@ -1,5 +1,6 @@
-particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 3 5
+particle minecraft:explosion_emitter ~ ~ ~ 0.2 0.2 0.2 1 5
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 0.8
 scoreboard players set @s pen_clicks 0
-execute as @e[distance=..2, type=!item_frame, type=!armor_stand, type=!minecart, type=!painting, type=!item, type=!glow_item_frame, type=!leash_knot] run damage @s 20
-execute as @e[distance=3..5] run damage @s 10
+execute at @s as @e[distance=..2] run damage @s 20
+execute at @s as @e[distance=..3] run damage @s 15
+execute at @s as @e[distance=..4] run damage @s 10

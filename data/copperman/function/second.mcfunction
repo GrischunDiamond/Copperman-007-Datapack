@@ -14,3 +14,6 @@ execute as @e[type=block_display, tag=surveillance_camera] run function copperma
 #Remove Camera
 execute as @e[type=block_display, tag=surveillance_camera] run function copperman:gadgets/camera/remove_camera
 
+#PEN - Countdown timer (players and items separately to avoid double counting)
+execute as @a[scores={pen_timer=1..}] run scoreboard players remove @s pen_timer 1
+execute as @e[type=item, predicate=copperman:is_pen, scores={pen_timer=1..}] run scoreboard players remove @s pen_timer 1

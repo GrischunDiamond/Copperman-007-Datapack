@@ -2,23 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ibi",
+    "ipi",
     "tst",
     "ibi"
   ],
   "key": {
-    "i": [
-      "minecraft:iron_ingot"
-    ],
-    "b": [
-      "minecraft:book"
-    ],
-    "t": [
-      "minecraft:tnt"
-    ],
-    "s": [
-      "minecraft:black_shulker_box"
-    ]
+    "i": "minecraft:iron_ingot",
+    "b": "minecraft:book",
+    "t": "minecraft:tnt",
+    "s": "minecraft:black_shulker_box",
+    "p": "minecraft:splash_potion"
   },
   "result": {
     "id": "minecraft:black_shulker_box",
