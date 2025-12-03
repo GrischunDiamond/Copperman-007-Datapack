@@ -324,4 +324,4 @@ execute if block ~3 ~ ~3 black_shulker_box{CustomName:{"bold":true,"color":"dark
 execute if block ~3 ~ ~4 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
 execute if block ~3 ~1 ~-4 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
 execute if block ~3 ~1 ~-3 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase
-execute if block ~3 ~1 ~-2 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suit
+execute if block ~3 ~1 ~-2 black_shulker_box{CustomName:{"bold":true,"color":"dark_gray","text":"Suitcase"}} run function copperman:gadgets/suitcase/explode_suitcase

@@ -1,5 +1,5 @@
 #SUITCASE
-execute as @a[scores={opened_shulkerbox=1..}] at @s if predicate copperman:is_not_sneaking run function copperman:gadgets/suitcase/check_shulker_box
+execute as @a[scores={opened_shulkerbox=1..}] at @s unless entity @p[tag=q,distance=..10] unless entity @p[tag=agents,distance=..10] if predicate copperman:is_not_sneaking run function copperman:gadgets/suitcase/check_shulker_box
 scoreboard players reset @a opened_shulkerbox 
 scoreboard players enable @a opened_shulkerbox
 
