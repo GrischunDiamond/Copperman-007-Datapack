@@ -1,7 +1,11 @@
 # Copperman Datapack Guide
 
-### Resource Pack
-To download from this URL: <https://download.mc-packs.net/pack/ee7dbc334c6dea60b18333591dd111bf12ea7fd7.zip>
+## Data
+Island Test World on NextCloud
+[Island Villa](https://nextcloud.grischunlab.ch/f/1792)
+
+Copperman Ressource Pack on MC-Packs.net
+[Copperman Ressource Pack](https://download.mc-packs.net/pack/ee7dbc334c6dea60b18333591dd111bf12ea7fd7.zip)
 
 ## Usage
 Copy the Datapack the datapacks Folder: /saves/WORLD_NAME/datapacks
@@ -57,10 +61,42 @@ Get Crafting Recipe
 ```
 /recipe give @s copperman:custom/pen
 ```
+--> Now search for it in Crafting Table and build it manually
 
---> Now search for it in Crafting Table and build it manuelly
+### Suitcase
+A normal looking Shulkerbox to store all your Gadgets
+
+But have Attention, when oppening incorrectly the Gas Granate Explodes in it
+
+> To correctly open it with Shift + Right Click
 
 
+### Guard
+--- Not ready implemented ---
+
+Only Tag with Command:
+```
+/function copperman:give_all_gadgets
+```
+
+
+### Zyanid Potion
+If you drink it, you die
+
+Currently you can only get it through Get command
+```
+/function copperman:give_all_gadgets
+```
+
+### Copperman Missiles
+Currently only as normal colored Fireworks available.
+--> But they make a lot of damage even now
+To shoot it you need a normal Crossbow
+
+You get they with Get Command
+```
+/function copperman:give_all_gadgets
+```
 
 ### Cameras
 #### Instalation
