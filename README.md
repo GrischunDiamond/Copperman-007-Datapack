@@ -5,7 +5,7 @@ Island Test World on NextCloud
 [Island Villa](https://nextcloud.grischunlab.ch/f/1792)
 
 Copperman Ressource Pack on MC-Packs.net
-[Copperman Ressource Pack](https://download.mc-packs.net/pack/ee7dbc334c6dea60b18333591dd111bf12ea7fd7.zip)
+[Copperman Ressource Pack](https://nextcloud.grischunlab.ch/f/1793)
 
 ## Usage
 Copy the Datapack the datapacks Folder: /saves/WORLD_NAME/datapacks
